@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>OAuth Callback</title></head>
+<body>
+<h1>OAuth Callback Received</h1>
+<p id="code"></p>
+<script>
+const params = new URLSearchParams(window.location.search);
+const code = params.get('code');
+document.getElementById('code').textContent = 'Authorization Code: ' + code;
+</script>
+</body>
+</html>
